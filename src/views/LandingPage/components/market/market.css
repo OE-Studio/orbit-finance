@@ -1,0 +1,24 @@
+.disappear{
+    top:100%;
+    transition: 0.5s ease-in-out;
+}
+
+.appear {
+    top:0%;
+}
+
+.image0{
+    transform: scale(1.2) translateY(-30px);
+}
+
+.image1{
+    transform: translate(-50px, 40px);
+}
+
+.image2{
+    transform: translate(28px, -24px);
+}
+
+.image3{
+    transform: translateY(60px);
+}
