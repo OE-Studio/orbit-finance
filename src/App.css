@@ -5,19 +5,67 @@
 
 @layer components{
   .btn {
-    @apply bg-green_700 rounded-full text-white font-semibold
+    @apply bg-green_700 rounded-full text-white font-clash-semibold
   }
 }
 
 .service::after{
   content: "";
   background:url(./assets/static/icons/asteriks.svg) no-repeat;
-  width:10px;
-  height:10px;
+  width:20px;
+  height:20px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   right:0px;
-  top:40%;
+  top:30%;
+}
+
+.animateText {
+  animation:scroll 6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes scroll {
+  1.3329999999999984%, 33.333% {
+      transform: translateY(-0%);
+      -webkit-transform: translateY(-0%);
+      -ms-transform: translateY(-0%);
+      -o-transform: translateY(-0%);
+      -moz-transform: translateY(-0%);
+  }
+  34.666%, 66.666% {
+      transform: translateY(-33%);
+      -webkit-transform: translateY(-33%);
+      -ms-transform: translateY(-33%);
+      -o-transform: translateY(-33%);
+      -moz-transform: translateY(-33%);
+  }
+  67.999%, 99.999% {
+      transform: translateY(-66%);
+      -webkit-transform: translateY(-66%);
+      -ms-transform: translateY(-66%);
+      -o-transform: translateY(-66%);
+      -moz-transform: translateY(-66%);
+  }
+  /* -32%, 0% {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+  } */
+}
+
+.scrollText {
+  animation:disappear 2s ease infinite;
+  animation-delay:2.1s;
+}
+
+@keyframes disappear {
+  0%{opacity:0}
+  30%{opacity:1}
+  95%{opacity:1}
+  100%{opacity:0}
 }

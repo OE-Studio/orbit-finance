@@ -4,7 +4,7 @@ import Input from '../../../../components/input'
 
 export default function Waitlist() {
   return (
-    <div className='mt-24 container px-4 lg:px-10 mx-auto grid grid-cols-1 md:grid-cols-2' id="form">
+    <div className='mt-24 container px-5 lg:px-10 mx-auto grid grid-cols-1 md:grid-cols-2' id="form">
         <div className='col-span-1'>
             <img alt="" src={pressingPhone}/>
         </div>

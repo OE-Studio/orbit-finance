@@ -34,6 +34,7 @@ export default function ScrollingCard() {
         speed: 500,
         autoplaySpeed: 5000,
         cssEase: "linear",
+        draggable:false
       };
     // function isInViewport(element) {
     //     const rect = element.getBoundingClientRect();
@@ -143,10 +144,10 @@ export default function ScrollingCard() {
     }, [innerWidth])
 
   return (
-    <div className='mt-12 relative overflow-hidden flex items-center justify-center h-screen'>
+    <div className='mt-12 relative overflow-hidden flex items-center justify-center min-h-screen'>
         {/* <div className='parent h-screen flex items-center justify-center bg-white'> */}
-            <div className='container mx-auto scroll cont px-4 lg:px-10 overflow-hidden'>
-                <div className='scrollingcard flex overflow-hidden lg:h-[600px]'>
+            <div className='container mx-auto scroll cont px-5 lg:px-10 overflow-hidden'>
+                <div className='scrollingcard flex overflow-hidden lg:h-[500px] xl:h-[600px]'>
                     <Slider ref={el=>sliderRef=el} {...settings} className="container overflow-hidden h-full">      
                         <div className='lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
@@ -159,7 +160,7 @@ export default function ScrollingCard() {
                                     <img src={scrollingvector1} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
 
                                     <div className='relative block'>
-                                        <img src={scrollingcard1} alt="" className={`block w-[300px] lg:w-[350px]`}/>    
+                                        <img src={scrollingcard1} alt="" className={`block w-[300px] lg:w-[350px] drop-shadow-2xl`}/>    
                                     </div>
                                 </div>
                             </div>
