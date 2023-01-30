@@ -5,7 +5,7 @@
 
 @layer components{
   .btn {
-    @apply bg-green_700 rounded-full text-white font-clash-semibold
+    @apply bg-green_700 rounded-full text-white font-clash-semibold hover:shadow-lg hover:bg-[#177e3b]
   }
 }
 

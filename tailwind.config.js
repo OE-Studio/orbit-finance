@@ -24,6 +24,7 @@ module.exports = {
       black:colors.black,
       dark_blue:"#001428",
       blue_300:"#9ECEF4",
+      blue_300_new:"#356290",
       gray_300:"#787878",
       gray_400:"#5B5B5B",
       green_700:"#00AA61",

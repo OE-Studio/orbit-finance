@@ -100,7 +100,7 @@ export default function Desktop() {
                 <div onMouseOver={()=>setFocus(true)} onMouseOut={()=>setFocus(false)} className='w-full cursor-pointer ' onClick={showMore}>
                     <div className='w-full p-6'>
                         <div className='w-full flex items-center justify-between'>
-                            <div className={`${focus ? 'bg-green_700 text-white' : "bg-neutral_100"}  rounded-full flex items-center gap-4 h-9 px-4`}>
+                            <div className={`${focus ? 'bg-green_700 text-white' : "bg-neutral_100"}  rounded-full flex items-center gap-4 h-9 px-4 md:px-2 xl:px-4`}>
                                 <Bolt fill={focus ? "#FFFFFF" : "#000000"}/>
                                 Take a look
                             </div>
@@ -110,7 +110,7 @@ export default function Desktop() {
                             </div>
                         </div>
 
-                        <div className='font-clash-medium text-4xl xl:text-5xl mt-4'>Availability & <br/>Affordability</div>
+                        <div className='font-clash-medium text-4xl md:text-3xl xl:text-5xl mt-4'>Availability & <br/>Affordability</div>
                     </div>
 
                     <div className='relative'>
@@ -127,18 +127,18 @@ export default function Desktop() {
                             <Remove/>
                         </div>
                     </div>
-                    <div className='text-4xl xl:text-5xl mt-6 font-clash-medium'>Availability & Affordability</div>
+                    <div className='font-clash-medium text-4xl md:text-3xl xl:text-5xl mt-4'>Availability & Affordability</div>
                     <p className='mt-6'>We’ve put together all your daily needs so you can find them quickly and easily. Get what you need at the best price so you can focus on what matters.</p>
                 </div>
             </div>
         </div>
 
         {/* Aesthestic guy image */}
-        <div className='relative hidden md:flex justify-center items-center py-10'>
+        <div className='relative hidden md:flex justify-center items-center py-20'>
             <img src={guy} alt="" className=" top-0 left-1/3 block"/>
         </div>
 
-        <div className='absolute top-40 right-0 hidden md:block py-10'>
+        <div className='absolute top-40 right-0 hidden md:block'>
             <img src={guy2} alt="" className=" block"/>
         </div>
     </div>

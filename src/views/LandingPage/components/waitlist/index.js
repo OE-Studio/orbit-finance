@@ -4,9 +4,9 @@ import Input from '../../../../components/input'
 
 export default function Waitlist() {
   return (
-    <div className='mt-24 container px-5 lg:px-10 mx-auto grid grid-cols-1 md:grid-cols-2' id="form">
+    <div className=' container px-5 lg:px-10 mx-auto grid grid-cols-1 md:grid-cols-2 mt-24 md:mt-0' id="form">
         <div className='col-span-1'>
-            <img alt="" src={pressingPhone}/>
+            <img alt="" src={pressingPhone} className="md:h-full xl:h-auto"/>
         </div>
 
         <div className='col-span-1 flex items-center justify-center p-6 xl:pt-0 xl:px-8 border border-neutral_200 border-t-0 md:border-t md:border-l-0 rounded-b-[16px] md:rounded-b-none md:rounded-r-[16px]'>

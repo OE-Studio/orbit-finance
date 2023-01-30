@@ -87,7 +87,7 @@ export default function Hero() {
         <NavBar/>
 
         <header className='text-center mt-24 lg:mt-16'>
-            <p className='text-white text-xs md:text-sm border border-blue_300 rounded-full inline-flex py-3 px-6 bg-blue_300 bg-opacity-30'>We are getting set to launch, join wait list {" "} <img src={arrowForward} alt="" className='inline-block ml-2'/></p>
+            <p className='text-white text-xs md:text-sm border border-blue_300 rounded-full inline-flex py-3 px-6 bg-blue_300_new bg-opacity-10'>We are getting set to launch, join wait list {" "} <img src={arrowForward} alt="" className='inline-block ml-2'/></p>
 
             <div className='text-white text-4xl md:text-5xl xl:text-7xl mt-6 font-clash-medium overflow-hidden'>
                 Your everyday 
@@ -99,7 +99,7 @@ export default function Hero() {
                         {headerTexts.map((text)=>{
                             return (
                                 <div className='flex gap-2 items-center scrollText' key={text.header}>
-                                    <h1 className=' xl:leading-3'>{text.header}</h1>
+                                    <h1 className=' xl:leading-3 text-blue_300'>{text.header}</h1>
                                     <img src={text.icon} alt="" className="w-8 mt-1 xl:w-auto"/>
                                 </div>
                             )
