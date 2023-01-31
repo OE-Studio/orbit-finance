@@ -18,8 +18,14 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  right:0px;
-  top:30%;
+  right:-12px;
+  top:20%;
+}
+
+@media screen and (min-width:900px) {
+  .service::after{
+    top:30%;
+  }
 }
 
 .animateText {
@@ -68,4 +74,13 @@
   30%{opacity:1}
   95%{opacity:1}
   100%{opacity:0}
+}
+
+.movingText {
+  animation:slide 16s linear infinite;
+}
+
+@keyframes slide {
+  from{transform: translateX(0%);}
+  to{transform: translateX(-48%);}
 }

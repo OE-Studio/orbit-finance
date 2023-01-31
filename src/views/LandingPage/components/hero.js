@@ -15,14 +15,14 @@ import ebonyWoman from '../../../assets/static/images/ebony_woman.webp'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // gsap.registerPlugin(ScrollTrigger);
 
-const services="Data,Airtime,Bank Transfer,Cable Subscription,Electricity,Physical Card,Virtual Card".split(",")
+const services="Data,Airtime,Bank Transfer,Cable Subscription,Electricity,Physical Card,Virtual Card,Data,Airtime,Bank Transfer,Cable Subscription,Electricity,Physical Card,Virtual Card".split(",")
 
 const headerTexts = [
     {
@@ -72,22 +72,22 @@ export default function Hero() {
           });
     }, [])
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 5,
-        autoplay: true,
-        speed: 9000,
-        autoplaySpeed: 9000,
-        cssEase: "linear",
-    };
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 5,
+    //     autoplay: true,
+    //     speed: 9000,
+    //     autoplaySpeed: 9000,
+    //     cssEase: "linear",
+    // };
   return (
     <div className='bg-dark_blue overflow-hidden'>
         <NavBar/>
 
         <header className='text-center mt-24 lg:mt-16'>
-            <p className='text-white text-xs md:text-sm border border-blue_300 rounded-full inline-flex py-3 px-6 bg-blue_300_new bg-opacity-10'>We are getting set to launch, join wait list {" "} <img src={arrowForward} alt="" className='inline-block ml-2'/></p>
+            <a href="#form" className='text-white text-xs md:text-sm border border-blue_300 rounded-full inline-flex py-3 px-6 bg-blue_300_new bg-opacity-10 cursor-pointer'>We are getting set to launch, join wait list {" "} <img src={arrowForward} alt="" className='inline-block ml-2'/></a>
 
             <div className='text-white text-4xl md:text-5xl xl:text-7xl mt-6 font-clash-medium overflow-hidden'>
                 Your everyday 
@@ -134,12 +134,19 @@ export default function Hero() {
         </div>
 
         <div className='lg:text-2xl xl:text-2xl text-white bg-green_700 py-4 relative z-10 overflow-hidden'>
-            <div className='w-[1500px]'>
+            {/* <div className='w-[1500px]'>
                 <Slider {...settings} className="w-full items-center justify-center text-center">
                     {services.map((service, index)=>{
                         return <div key={index} className='w-auto inline-block service relative font-clash-medium xl:text-3xl'>{service}</div>
                     })}
                 </Slider>
+            </div> */}
+            <div className=''>
+                <div className="w-[2800px] movingText">
+                    {services.map((service, index)=>{
+                        return <div key={index} className='w-auto inline-block service relative font-clash-medium xl:text-3xl px-5 '>{service}</div>
+                    })}
+                </div>
             </div>
         </div>
 

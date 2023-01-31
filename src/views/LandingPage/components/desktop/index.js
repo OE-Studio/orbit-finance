@@ -66,7 +66,7 @@ export default function Desktop() {
             </h1>
         </header>
 
-        <div className='grid grid-cols-1 lg:grid-cols-6 container mx-auto gap-8 mt-6 xl:mt-20 px-5 lg:px-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-6 container mx-auto gap-8 mt-6 lg:mt-12 xl:mt-20 px-5 lg:px-10'>
             <div className='lg:col-span-2 flex flex-col items-start justify-between'>
                 <div className='border rounded-inputs border-neutral_200 p-8'>
                     <div className='font-clash-medium text-2xl'>Familiar Interface</div>
@@ -79,12 +79,23 @@ export default function Desktop() {
                 </div>
             </div>
 
-            <div className='lg:col-span-4 flex flex-col-reverse gap-20 md:gap-0 md:flex-row md:items-center justify-between px-8 border border-neutral_200 rounded-cards overflow-hidden phone-trigger'>
-                <div className='flex items-end justify-center h-full'>
-                    <img ref={phoneRef1} src={phone1} alt="" className='block'/>
+            <div className='lg:col-span-4 border border-neutral_200 rounded-cards phone-trigger relative'>
+                <div className='overflow-hidden  flex flex-col-reverse gap-20 md:gap-0 md:flex-row md:items-center justify-between px-8 h-full'>
+                    <div className='flex items-end justify-center h-full'>
+                        <img ref={phoneRef1} src={phone1} alt="" className='block'/>
+                    </div>
+                    <div className='flex items-start justify-center h-full'>
+                        <img ref={phoneRef2} src={phone2} alt=""/>
+                    </div>
                 </div>
-                <div className='flex items-start justify-center h-full'>
-                    <img ref={phoneRef2} src={phone2} alt=""/>
+
+                {/* Aesthestic guy image */}
+                <div className='inline-block absolute right-0 md:-left-20 top-1/2 transform -translate-y-1/2'>
+                    <img src={guy} alt="" className=" block"/>
+                </div>
+
+                <div className='inline-block absolute top-0 left-0 md:left-1/2 transform md:-translate-x-full md:-translate-y-1/2'>
+                    <img src={guy2} alt="" className=" block"/>
                 </div>
             </div>
         </div>
@@ -133,14 +144,7 @@ export default function Desktop() {
             </div>
         </div>
 
-        {/* Aesthestic guy image */}
-        <div className='relative hidden md:flex justify-center items-center py-20'>
-            <img src={guy} alt="" className=" top-0 left-1/3 block"/>
-        </div>
-
-        <div className='absolute top-40 right-0 hidden md:block'>
-            <img src={guy2} alt="" className=" block"/>
-        </div>
+        
     </div>
   )
 }

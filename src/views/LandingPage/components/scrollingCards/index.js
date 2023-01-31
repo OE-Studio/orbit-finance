@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import scrollingcard1 from '../../../../assets/static/cards/scrollingcard1.svg'
 import scrollingcard2 from '../../../../assets/static/cards/scrollingcard2.svg'
 import scrollingcard3 from '../../../../assets/static/cards/scrollingcard3.svg'
+import scrollingcard4 from '../../../../assets/static/cards/scrollindcard4.svg'
 
 import scrollingvector1 from '../../../../assets/static/cards/scrollingvector1.svg'
 import scrollingvector2 from '../../../../assets/static/cards/scrollingvector2.svg'
@@ -156,11 +157,12 @@ export default function ScrollingCard() {
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>Virtual USD & <br/>Naira cards</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Virtual cards designed to meet your International and local needs</p>
                                 </div>
-                                <div className='flex items-center justify-center h-full w-full relative'>
-                                    <img src={scrollingvector1} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
-
-                                    <div className='relative block'>
-                                        <img src={scrollingcard1} alt="" className={`block w-[300px] lg:w-[350px] drop-shadow-2xl`}/>    
+                                <div className='flex items-center justify-center h-full w-full relative '>
+                                    <img src={scrollingvector1} alt="" className="absolute bottom-0 right-0 w-full xl:w-[800px]"/>
+                                    <div className='transform translate-y-20 md:translate-y-0'>
+                                        <div className='relative block'>
+                                            <img src={scrollingcard1} alt="" className={`block w-[300px] lg:w-[350px] xl:w-[400px] drop-shadow-2xl`}/>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -173,10 +175,12 @@ export default function ScrollingCard() {
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>A generous<br/> spending limit</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Spend without hassle, go beyond, with a generous spending limit.</p>
                                 </div>
-                                <div className='flex items-start justify-center h-full w-full relative'>
+                                <div className='flex items-start justify-center h-full w-full relative '>
                                     <img src={scrollingvector2} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
 
-                                    <img src={scrollingcard2} alt="" className={`block w-[300px] lg:w-[350px] relative`}/>
+                                    <div className='transform translate-y-28 md:translate-y-0'>
+                                        <img src={scrollingcard2} alt="" className={`block w-[300px] lg:w-[350px] xl:w-[400px] relative`}/>
+                                    </div>
                                 </div>
                             </div>
                         </div> 
@@ -188,10 +192,14 @@ export default function ScrollingCard() {
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>A physical card<br/> just for you</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Get our physical card for your shopping and withdrawal, we have you covered. </p>
                                 </div>
-                                <div className='flex items-end justify-center h-full w-full relative'>
+                                <div className='flex items-end justify-start h-full w-full relative overflow-hidden '>
                                     <img src={scrollingvector3} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
 
-                                    <img src={scrollingcard3} alt="" className={`block w-[300px] lg:w-[350px] relative`}/>
+                                    <div className='transform translate-y-20 md:translate-y-0 w-full'>
+                                        <img src={scrollingcard4} alt="" className={`absolute w-[200px] bottom-0 right-0 lg:right-12`}/>
+                                        <img src={scrollingcard3} alt="" className={`block w-[300px] lg:w-[350px] xl:w-[400px] relative`}/>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>  

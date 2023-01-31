@@ -50,7 +50,7 @@ const CardTemplate = ({title, image, description, index}) =>{
     }, [])
 
     return (
-        <div className='border border-neutral_200 rounded-cards h-auto w-full p-0 relative overflow-hidden hover:shadow-[10px_30px_100px_0px_#00000017] hover:bg-white cursor-pointer'>
+        <div className='border border-neutral_200 rounded-cards h-[580px] md:h-auto w-full p-0 relative overflow-hidden hover:shadow-[10px_30px_100px_0px_#00000017] hover:bg-white cursor-pointer'>
             {/* Main view */}
             <div onClick={()=>showMore(index)} onMouseOver={()=>setFocus(true)} onMouseOut={()=>setFocus(false)} className="flex flex-col items-center justify-between  h-full">
                 <div className='p-6 lg:p-4 xl:p-6'>
@@ -69,7 +69,7 @@ const CardTemplate = ({title, image, description, index}) =>{
                 </div>
 
                 
-                <div className='w-full h-auto relative mt-24 md:mt-0'>
+                <div className='w-full h-auto relative md:mt-0'>
                     <img src={image} alt="" className={`market-image`}/>
                 </div>
             </div>

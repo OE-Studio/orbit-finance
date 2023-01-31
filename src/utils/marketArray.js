@@ -1,5 +1,5 @@
 import card1 from '../assets/static/cards/card1.svg'
-import card2 from '../assets/static/cards/card2.svg'
+import card2 from '../assets/static/cards/card2.png'
 import card3 from '../assets/static/cards/card3.svg'
 import card4 from '../assets/static/cards/card4.svg'
 
