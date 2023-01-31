@@ -68,18 +68,18 @@ export default function Desktop() {
 
         <div className='grid grid-cols-1 lg:grid-cols-6 container mx-auto gap-8 mt-6 lg:mt-12 xl:mt-20 px-5 lg:px-10'>
             <div className='lg:col-span-2 flex flex-col items-start justify-between'>
-                <div className='border rounded-inputs border-neutral_200 p-8'>
+                <div className='border rounded-medium border-neutral_200 p-8'>
                     <div className='font-clash-medium text-2xl'>Familiar Interface</div>
                     <p className='mt-5 text-gray_400 text-lg'>Start attending to all your needs from the get-go. All the tools you need are placed front and centre so you can do what matters.</p>
                 </div>
 
-                <div className='border rounded-inputs border-neutral_200 p-8 mt-8'>
+                <div className='border rounded-medium border-neutral_200 p-8 mt-8'>
                     <div className='font-clash-medium text-2xl'>Ease of use</div>
                     <p className='mt-5 text-gray_400 text-lg'>Access and control what belongs to you with 'the owner' comfort. Transact and pay for your needs without stress anywhere, anytime.</p>
                 </div>
             </div>
 
-            <div className='lg:col-span-4 border border-neutral_200 rounded-cards phone-trigger relative'>
+            <div className='lg:col-span-4 border border-neutral_200 rounded-medium phone-trigger relative'>
                 <div className='overflow-hidden  flex flex-col-reverse gap-20 md:gap-0 md:flex-row md:items-center justify-between px-8 h-full'>
                     <div className='flex items-end justify-center h-full'>
                         <img ref={phoneRef1} src={phone1} alt="" className='block'/>
@@ -102,7 +102,7 @@ export default function Desktop() {
 
 
         <div className='grid grid-cols-1 md:grid-cols-6 container mx-auto mt-20 gap-8 px-5 lg:px-10'>
-            <div className='md:col-span-4 border border-neutral_200 rounded-cards px-8 pt-8 overflow-hidden md:flex md:justify-center md:items-end'>
+            <div className='md:col-span-4 border border-neutral_200 rounded-medium px-8 pt-8 overflow-hidden md:flex md:justify-center md:items-end'>
                 <img src={desktop} alt="" className='w-auto md:w-full scale-150 md:scale-100 mt-20 ml-20 md:ml-0 md:mt-0'/>
             </div>
 
