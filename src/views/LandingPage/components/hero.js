@@ -142,7 +142,7 @@ export default function Hero() {
                 </Slider>
             </div> */}
             <div className=''>
-                <div className="w-[2800px] movingText">
+                <div className="w-[2000px] lg:w-[2300px] xl:w-[2730px] movingText">
                     {services.map((service, index)=>{
                         return <div key={index} className='w-auto inline-block service relative font-clash-medium xl:text-3xl px-5 '>{service}</div>
                     })}
