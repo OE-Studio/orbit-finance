@@ -148,9 +148,9 @@ export default function ScrollingCard() {
     <div className='mt-12 relative overflow-hidden flex items-center justify-center min-h-screen bg-white'>
         {/* <div className='parent h-screen flex items-center justify-center bg-white'> */}
             <div className='container mx-auto scroll cont px-5 lg:px-10 overflow-hidden'>
-                <div className='scrollingcard flex overflow-hidden lg:h-[500px] xl:h-[600px]'>
+                <div className='scrollingcard flex overflow-hidden h-auto lg:h-[500px] xl:h-[600px]'>
                     <Slider ref={el=>sliderRef=el} {...settings} className="container overflow-hidden h-full">      
-                        <div className='lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
+                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
                                 <div className='w-full p-4 lg:p-6 xl:p-16 lg:pr-0'>
                                     <p className='text-green_700'>001</p>
@@ -168,24 +168,24 @@ export default function ScrollingCard() {
                             </div>
                         </div> 
 
-                        <div className='lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
+                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
                                 <div className='w-full p-4 lg:p-6 xl:p-16 lg:pr-0'>
                                     <p className='text-green_700'>002</p>
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>A generous<br/> spending limit</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Spend without hassle, go beyond, with a generous spending limit.</p>
                                 </div>
-                                <div className='flex items-start justify-center h-full w-full relative '>
+                                <div className='flex items-start justify-center h-full w-full relative'>
                                     <img src={scrollingvector2} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
 
-                                    <div className='transform translate-y-28 md:translate-y-0'>
+                                    <div className='transform mt-12 md:mt-0 translate-y-28 md:translate-y-0'>
                                         <img src={scrollingcard2} alt="" className={`block w-[300px] lg:w-[350px] xl:w-[400px] relative`}/>
                                     </div>
                                 </div>
                             </div>
                         </div> 
 
-                        <div className='lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
+                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
                                 <div className='p-4 lg:p-6 xl:p-16 lg:pr-0 w-full'>
                                     <p className='text-green_700'>003</p>
@@ -195,7 +195,7 @@ export default function ScrollingCard() {
                                 <div className='flex items-end justify-start h-full w-full relative overflow-hidden '>
                                     <img src={scrollingvector3} alt="" className="absolute bottom-0 right-0 w-[800px]"/>
 
-                                    <div className='transform translate-y-20 md:translate-y-0 w-full'>
+                                    <div className='transform mt-12 md:mt-0 translate-y-20 md:translate-y-0 w-full'>
                                         <img src={scrollingcard4} alt="" className={`absolute w-[200px] bottom-0 right-0 lg:right-12`}/>
                                         <img src={scrollingcard3} alt="" className={`block w-[300px] lg:w-[350px] xl:w-[400px] relative`}/>
                                     </div>
