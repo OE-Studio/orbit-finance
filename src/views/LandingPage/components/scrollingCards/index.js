@@ -145,7 +145,7 @@ export default function ScrollingCard() {
     }, [innerWidth])
 
   return (
-    <div className='mt-12 relative overflow-hidden flex items-center justify-center min-h-screen'>
+    <div className='mt-12 relative overflow-hidden flex items-center justify-center min-h-screen bg-white'>
         {/* <div className='parent h-screen flex items-center justify-center bg-white'> */}
             <div className='container mx-auto scroll cont px-5 lg:px-10 overflow-hidden'>
                 <div className='scrollingcard flex overflow-hidden lg:h-[500px] xl:h-[600px]'>

@@ -10,13 +10,16 @@ import Footer from '../../components/footer'
 export default function LandingPage() {
   return (
     <div className='relative'>
-        <Hero/>
-        <Crafted/>
-        <Market/>
-        <ScrollingCard/>
-        <Desktop/>
-        <Waitlist/>
-        <Footer/>
+        <div className='fixed top-0 left-0 w-full h-96 bg-dark_blue z-0'></div>
+        <div className='relative bg-white'>
+          <Hero/>
+          <Crafted/>
+          <Market/>
+          <ScrollingCard/>
+          <Desktop/>
+          <Waitlist/>
+          <Footer/>
+        </div>
     </div>
   )
 }

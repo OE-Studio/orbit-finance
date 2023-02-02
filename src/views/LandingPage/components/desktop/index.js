@@ -58,7 +58,7 @@ export default function Desktop() {
     }
 
   return (
-    <div className='mt-24 relative'>
+    <div className='mt-24 relative bg-white'>
         <header className='text-center'>
             <h1 className='font-clash-medium text-4xl xl:text-7xl'>
                 On desktop, mobile<br/> and {" "} 

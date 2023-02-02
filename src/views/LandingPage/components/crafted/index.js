@@ -49,7 +49,7 @@ export default function Crafted() {
       }, []);
 
   return (
-    <div className='py-40 relative h-auto overflow-x-hidden' >
+    <div className='py-40 relative h-auto overflow-x-hidden z-10 bg-white' >
         <div className={`${circlesClass} big-round w-full lg:w-[800px] rounded-full mx-auto`} ref={imageContainerRef}>
             <div className={`${circlesClass} w-4/5`}>
                 <div className={`${circlesClass} w-4/6`}>

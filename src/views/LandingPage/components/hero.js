@@ -83,7 +83,7 @@ export default function Hero() {
     //     cssEase: "linear",
     // };
   return (
-    <div className='bg-dark_blue overflow-hidden'>
+    <div className='bg-dark_blue overflow-hidden relative'>
         <NavBar/>
 
         <header className='text-center mt-24 lg:mt-16'>
