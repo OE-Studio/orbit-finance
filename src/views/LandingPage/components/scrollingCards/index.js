@@ -150,7 +150,7 @@ export default function ScrollingCard() {
             <div className='container mx-auto scroll cont px-5 lg:px-10 overflow-hidden'>
                 <div className='scrollingcard flex overflow-hidden h-auto lg:h-[500px] xl:h-[600px]'>
                     <Slider ref={el=>sliderRef=el} {...settings} className="container overflow-hidden h-full">      
-                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item'>
+                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
                                 <div className='w-full p-4 lg:p-6 xl:p-16 lg:pr-0'>
                                     <p className='text-green_700'>001</p>
