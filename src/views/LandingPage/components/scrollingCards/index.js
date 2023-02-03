@@ -35,7 +35,10 @@ export default function ScrollingCard() {
         speed: 500,
         autoplaySpeed: 5000,
         cssEase: "linear",
-        draggable:false
+        draggable:false,
+        touchMove:false,
+        swipe:false,
+        lazyLoad:"ondemand"
       };
     // function isInViewport(element) {
     //     const rect = element.getBoundingClientRect();
@@ -150,9 +153,9 @@ export default function ScrollingCard() {
             <div className='container mx-auto scroll cont px-5 lg:px-10 overflow-hidden'>
                 <div className='scrollingcard flex overflow-hidden h-auto lg:h-[500px] xl:h-[600px]'>
                     <Slider ref={el=>sliderRef=el} {...settings} className="container overflow-hidden h-full">      
-                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
+                        <div className='h-full  lg:h-[500px] xl:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
-                                <div className='w-full p-4 lg:p-6 xl:p-16 lg:pr-0'>
+                                <div className='w-full p-4 lg:p-12 xl:p-16 lg:pr-0'>
                                     <p className='text-green_700'>001</p>
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>Virtual USD & <br/>Naira cards</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Virtual cards designed to meet your International and local needs</p>
@@ -168,9 +171,9 @@ export default function ScrollingCard() {
                             </div>
                         </div> 
 
-                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
+                        <div className='h-full  lg:h-[500px] xl:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
-                                <div className='w-full p-4 lg:p-6 xl:p-16 lg:pr-0'>
+                                <div className='w-full p-4 lg:p-12 xl:p-16 lg:pr-0'>
                                     <p className='text-green_700'>002</p>
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>A generous<br/> spending limit</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Spend without hassle, go beyond, with a generous spending limit.</p>
@@ -185,9 +188,9 @@ export default function ScrollingCard() {
                             </div>
                         </div> 
 
-                        <div className='h-full lg:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
+                        <div className='h-full  lg:h-[500px] xl:h-[600px] inline-block bg-neutral_100 rounded-medium scroll-item overflow-hidden'>
                             <div className='flex flex-col md:flex-row w-full h-full'>
-                                <div className='p-4 lg:p-6 xl:p-16 lg:pr-0 w-full'>
+                                <div className='p-4 lg:p-12 xl:p-16 lg:pr-0 w-full'>
                                     <p className='text-green_700'>003</p>
                                     <h2 className='font-clash-medium text-4xl mt-6 xl:text-7xl text-dark_blue '>A physical card<br/> just for you</h2>
                                     <p className='mt-6 max-w-[30ch] text-gray_300'>Get our physical card for your shopping and withdrawal, we have you covered. </p>
