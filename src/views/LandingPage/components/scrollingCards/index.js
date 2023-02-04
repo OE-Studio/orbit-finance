@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import scrollingcard1 from '../../../../assets/static/cards/scrollingcard1.svg'
+import scrollingcard1 from '../../../../assets/static/cards/scrollingcard1.png'
 import scrollingcard2 from '../../../../assets/static/cards/scrollingcard2.svg'
 import scrollingcard3 from '../../../../assets/static/cards/scrollingcard3.svg'
 import scrollingcard4 from '../../../../assets/static/cards/scrollindcard4.svg'

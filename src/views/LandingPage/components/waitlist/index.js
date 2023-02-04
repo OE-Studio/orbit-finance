@@ -18,7 +18,7 @@ export default function Waitlist() {
             let response = await(fetch("https://orbitform.onrender.com/signup", {
                 method:'POST',
                 headers:{
-                    'Content-type':"pplication/json"
+                    'Content-type':"application/json"
                 },
                 body:JSON.stringify(data)
             }))
@@ -81,15 +81,15 @@ const Congratulations = ({setShowCongrats}) =>{
                 <img src={congratulations} alt="flower" className='w-24 xl:w-auto block mx-auto'/>
             </div>
 
-            <div className='font-clash-medium text-4xl md:text-2xl lg:text-4xl xl:text-6xl text-dark_blue text-center mt-3 xl:mt-6'>Congratulations</div>
+            <div className='font-clash-medium text-4xl md:text-2xl lg:text-4xl xl:text-6xl text-dark_blue text-center mt-3 xl:mt-4'>Congratulations</div>
 
-            <p className='text-center mt-3 xl:mt-6 leading-loose'>We've added you to our waiting list! We'll let you know <br className='hidden md:block'/>when Orbit Finance  is ready!</p>
+            <p className='text-center mt-3 xl:mt-4 leading-loose'>We've added you to our waiting list! We'll let you know <br className='hidden md:block'/>when Orbit Finance  is ready!</p>
 
             <button className='btn w-full h-14 mt-4 xl:mt-6' onClick={()=>setShowCongrats(false)}>Close</button>
 
             <div className='absolute top-0 left-0 mx-auto w-full'>
                 <lottie-player 
-                src="https://assets10.lottiefiles.com/packages/lf20_da4xcSnZnu.json"  
+                src="https://assets8.lottiefiles.com/packages/lf20_kzP9up3DuF.json"  
                 background="transparent"  
                 speed="1"  
                 style={{width:'100%', height:'300px'}}  
