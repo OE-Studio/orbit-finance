@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import pressingPhone from '../../../../assets/static/icons/pressingPhone.jpg'
 import congratulations from '../../../../assets/static/icons/congratulations.svg'
+import { WaitlistContext } from '../../../../App'
 import Input from '../../../../components/input'
 
 export default function Waitlist() {
@@ -9,13 +10,17 @@ export default function Waitlist() {
         fullName:""
     })
     const [loading, setLoading] = useState(false)
+
+    const waitList = useContext(WaitlistContext)
+
     const [showCongrats, setShowCongrats] = useState(false)
 
     const submitDetails = async(e) =>{
         e.preventDefault()
+        
         try{
             setLoading(true)
-            let response = await(fetch("https://orbitform.onrender.com/signup", {
+            let response = await(fetch("https://orbit-signup.herokuapp.com/signup", {
                 method:'POST',
                 headers:{
                     'Content-type':"application/json"
@@ -27,6 +32,7 @@ export default function Waitlist() {
                 setLoading(false)
                 setData({email:"", fullName:""})
                 setShowCongrats(true)
+                waitList.changeShow()
                 return false   
             }
             setLoading(false)
@@ -38,6 +44,7 @@ export default function Waitlist() {
         }
         
     }
+
 
   return (
     <div className=' container px-5 lg:px-10 mx-auto grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-2 pt-24 md:pt-40 xl:pt-52 bg-white' id="form">
@@ -63,7 +70,7 @@ export default function Waitlist() {
                         value={data.email}
                     />
 
-                    <button type="submit" disabled={!data.fullName && !data.email} className='btn w-full h-14' onClick={submitDetails}>
+                    <button type="submit" disabled={!data.fullName || !data.email || !data.email.includes("@")} className='btn w-full h-14' onClick={submitDetails}>
                         {loading ? "Submitting..." : "Join wait list"}
                     </button>
                 </div>
@@ -86,15 +93,6 @@ const Congratulations = ({setShowCongrats}) =>{
             <p className='text-center mt-3 xl:mt-4 leading-loose'>We've added you to our waiting list! We'll let you know <br className='hidden md:block'/>when Orbit Finance  is ready!</p>
 
             <button className='btn w-full h-14 mt-4 xl:mt-6' onClick={()=>setShowCongrats(false)}>Close</button>
-
-            <div className='absolute top-0 left-0 mx-auto w-full'>
-                <lottie-player 
-                src="https://assets8.lottiefiles.com/packages/lf20_kzP9up3DuF.json"  
-                background="transparent"  
-                speed="1"  
-                style={{width:'100%', height:'300px'}}  
-                 autoplay></lottie-player>
-            </div>
         </div>
     )
 }
