@@ -42,7 +42,6 @@ export default function Input({placeholder, onChange, name, type, value}) {
     }
 
     useEffect(()=>{
-        // spanRef.current.innerHTML = "Please enter a valid email"
         if(type  &&  type=== "email" && value){
             if(value  && spanRef && !value.includes("@")) {
                 setShowError(true)
