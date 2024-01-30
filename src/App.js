@@ -1,6 +1,12 @@
 import { createContext, useState } from 'react';
 import './App.css';
 import LandingPage from './views/LandingPage';
+import { PrivacyPolicy } from './views/PrivacyPolicy';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom'
 
 export const WaitlistContext = createContext()
 
@@ -17,7 +23,13 @@ function App() {
   return (
     <div className="App">
       <WaitlistContext.Provider value={{show, changeShow}}>
-        <LandingPage/>
+        {/* <LandingPage/> */}
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<LandingPage/>}/>
+            <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
+          </Routes>
+        </Router>
       </WaitlistContext.Provider>
     </div>
   );

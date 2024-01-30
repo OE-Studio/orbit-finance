@@ -106,6 +106,13 @@
 }
 
 
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   padding:0;
