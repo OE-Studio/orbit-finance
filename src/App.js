@@ -27,7 +27,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<LandingPage/>}/>
-            <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
+            <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
             <Route element={<LandingPage/>}/>
           </Routes>
         </Router>
